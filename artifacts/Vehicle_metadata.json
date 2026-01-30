@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.8.3+commit.8d00100c"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "move",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "stop",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contract/assignment1.sol": "Vehicle"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contract/assignment1.sol": {
+			"keccak256": "0x8716ebfa632c9ca888d81f1f23bb257a92a77b3e7b92c5c3cdca89f623b5ec80",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://72ba8d02a32b687a2c5eb8112d4032ec4701a4ec0e1c5231b52d3893b5e0593e",
+				"dweb:/ipfs/QmVbnBWgny8qjFENQr2Kz7xin1xR22qPjCGqQHh8Jwjd2h"
+			]
+		}
+	},
+	"version": 1
+}
