@@ -14,6 +14,8 @@ contract election{
      constructor () {
 
         owner = msg.sender;
+
+        isItPaused = true;
     }
 
     struct voter {
@@ -79,7 +81,7 @@ contract election{
         emit ContestantAdded(candidateNo,_name);
     }
 
-    function register (string memory _voterName , uint _age ) external whenNotPaused{
+    function register (string memory _voterName , uint _age ) external{
 
        require(!haveRegistered[msg.sender], "user has registered");
 
