@@ -145,11 +145,27 @@ contract election{
             maxVote = candidateByVote[i];
 
             winningCandidate = i;
-        }
-      }
-       return candidateById[winningCandidate]; 
-    }
+        }    
+         }
 
+          uint tieCount;
+
+         for(uint i =1; i <= candidateNo; i++){
+
+            if (candidateByVote[i] == maxVote){
+
+                tieCount++;
+            }
+         }
+
+         if (tieCount > 1){
+
+            return "there have been a tie";
+         }
+      
+      return candidateById[winningCandidate]; 
+    }
+       
     function whoDidIVoteFor () external view returns(string memory){
 
         require(haveVoted[msg.sender], "user hasn't voted yet");
