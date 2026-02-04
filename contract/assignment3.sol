@@ -160,11 +160,29 @@ contract election{
 
          if (tieCount > 1){
 
-            return "there have been a tie";
+            return "there has been a tie";
          }
       
       return candidateById[winningCandidate]; 
     }
+
+    function listOfCandidatesVotes () external view ownerOnly returns (string [] memory , uint [] memory){
+
+        require (candidateNo > 0 , "No candidate has been added");
+
+        require (totalVotes > 0, "No one has voted yet");
+
+        uint [] memory votes = new uint[] (candidateNo); 
+
+        for (uint i = 1; i <= candidateNo; i++){
+
+          votes[i -1] = candidateByVote[i];
+           
+        }
+
+         return (candidateName, votes);
+    }
+
        
     function whoDidIVoteFor () external view returns(string memory){
 

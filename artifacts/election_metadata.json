@@ -146,6 +146,24 @@
 			},
 			{
 				"inputs": [],
+				"name": "listOfCandidatesVotes",
+				"outputs": [
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					},
+					{
+						"internalType": "uint256[]",
+						"name": "",
+						"type": "uint256[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "pause",
 				"outputs": [],
 				"stateMutability": "nonpayable",
@@ -288,11 +306,11 @@
 	},
 	"sources": {
 		"contract/assignment3.sol": {
-			"keccak256": "0xb2888ba7ca0937ae3ed7d52bbcc4ce0f58ebe3e85e3391d95bbf0907d56b9e0d",
+			"keccak256": "0x00af532a3428d0fb0fb45a588c9953f8267343d1b9cb3ea3a36c59ca77a866c3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d257b5e4f3feb92778d3a106eb59926f1d2b74916b6ffdde9a8effa2c6565a48",
-				"dweb:/ipfs/QmX5VASVpGD5TkfRyR1NSeBpu2H8W2j5f5C8Sj77yzMMcM"
+				"bzz-raw://8c38888c22fc490786d510656403bce9a307185b11ca34098966fe8432de88ce",
+				"dweb:/ipfs/QmYpbhioKQJoJbGjHumQc3kB63rdJzKL8LQw64hShiR5W1"
 			]
 		}
 	},
