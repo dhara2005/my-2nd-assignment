@@ -34,19 +34,6 @@
 				"inputs": [
 					{
 						"indexed": true,
-						"internalType": "address",
-						"name": "by",
-						"type": "address"
-					}
-				],
-				"name": "Paused",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
 						"internalType": "uint256",
 						"name": "voterNo",
 						"type": "uint256"
@@ -72,19 +59,6 @@
 				"inputs": [
 					{
 						"indexed": true,
-						"internalType": "address",
-						"name": "by",
-						"type": "address"
-					}
-				],
-				"name": "Unpaused",
-				"type": "event"
-			},
-			{
-				"anonymous": false,
-				"inputs": [
-					{
-						"indexed": true,
 						"internalType": "uint256",
 						"name": "candidateNo",
 						"type": "uint256"
@@ -103,6 +77,19 @@
 					}
 				],
 				"name": "Voted",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "by",
+						"type": "address"
+					}
+				],
+				"name": "activity",
 				"type": "event"
 			},
 			{
@@ -163,13 +150,6 @@
 				"type": "function"
 			},
 			{
-				"inputs": [],
-				"name": "pause",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -202,6 +182,13 @@
 			},
 			{
 				"inputs": [],
+				"name": "toggleActivity",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "totalVotes",
 				"outputs": [
 					{
@@ -211,13 +198,6 @@
 					}
 				],
 				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "unpause",
-				"outputs": [],
-				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -306,11 +286,11 @@
 	},
 	"sources": {
 		"contract/assignment3.sol": {
-			"keccak256": "0x00af532a3428d0fb0fb45a588c9953f8267343d1b9cb3ea3a36c59ca77a866c3",
+			"keccak256": "0x19f5b4324073f2a42bf0555d698e8b177533fe2fe674b02f3f907d2a7e2166b1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8c38888c22fc490786d510656403bce9a307185b11ca34098966fe8432de88ce",
-				"dweb:/ipfs/QmYpbhioKQJoJbGjHumQc3kB63rdJzKL8LQw64hShiR5W1"
+				"bzz-raw://f5cca073fe371ea9a216fcdace48c3c4524dd6fe3f67c11816c3fbef534edfbf",
+				"dweb:/ipfs/QmViwCfrNv5ZnZBfQHpjm8ocNdSoGTorXGYryhJVUG2C3K"
 			]
 		}
 	},

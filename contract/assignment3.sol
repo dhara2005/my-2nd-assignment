@@ -60,9 +60,7 @@ contract election{
 
     event Voted (uint indexed candidateNo , address voterAddress, uint totalVotes);
 
-    event Paused (address indexed by);
-
-    event Unpaused (address indexed by);
+    event activity (address indexed by);
 
 
     function addContestant (string memory _name) external ownerOnly {
@@ -191,17 +189,11 @@ contract election{
         return votersToCandidate[msg.sender];
     }
 
-    function pause () external ownerOnly{
+    function toggleActivity () external ownerOnly{
 
-        isItPaused = true;
+        isItPaused = !isItPaused; // this is to make the contract true if it's false and then false if it's true, a toggle button
 
-        emit Paused(msg.sender);
+        emit activity(msg.sender);
     }
-
-    function unpause () external ownerOnly{
-        
-        isItPaused  = false;
-
-        emit Unpaused(msg.sender);
+    
     }
-}
